@@ -10,6 +10,7 @@ export default {
             white: '#FFFFFF',
             grey: {
                 500: '#DEDDDF',
+                700: '#8F8694',
             },
             purple: {
                 500: '#8e8593',
