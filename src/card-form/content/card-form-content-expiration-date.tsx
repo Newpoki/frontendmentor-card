@@ -21,7 +21,7 @@ export const CardFormContentExpirationDate = () => {
         <div>
             <FormLabel>exp. date (MM/YY)</FormLabel>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 lg:gap-[10px]">
                 <Controller
                     name={getFieldKey<CardFormValues>('exp.month')}
                     render={({ field }) => {

@@ -12,12 +12,12 @@ export const CardFormContent = () => {
     const formState = useFormState<CardFormValues>()
 
     return (
-        <main className="mx-auto flex w-[375px] flex-col gap-7 px-6 pb-8 pt-[90px]">
+        <main className="mx-auto flex max-w-[381px] flex-col justify-center gap-7 px-6 pb-8 pt-[90px] lg:p-0">
             {formState.isSubmitSuccessful ? (
                 <CardFormContentSuccess />
             ) : (
                 <>
-                    <div className="flex flex-col gap-5">
+                    <div className="flex flex-col gap-5 lg:gap-[26px]">
                         <div>
                             <FormLabel>cardholder name</FormLabel>
                             <ControlledTextfield
@@ -34,7 +34,7 @@ export const CardFormContent = () => {
                             />
                         </div>
 
-                        <div className="grid grid-cols-2 gap-3">
+                        <div className="grid grid-cols-2 gap-3 lg:gap-5">
                             <CardFormContentExpirationDate />
 
                             <div>

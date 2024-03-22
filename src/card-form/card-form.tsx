@@ -29,7 +29,11 @@ export const CardForm = () => {
     }, [formContext])
 
     return (
-        <ControlledForm formContext={formContext} onSubmit={handleSubmit}>
+        <ControlledForm
+            formContext={formContext}
+            onSubmit={handleSubmit}
+            className="flex flex-1 flex-col lg:flex-row"
+        >
             <CardFormPreviewPanel />
 
             <CardFormContent />

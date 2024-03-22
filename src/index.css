@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+#root {
     height: 100dvh;
     font-weight: 500;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
 }
 
 @layer components {
@@ -18,7 +20,7 @@ body {
     }
 
     .card-preview-panel-card {
-        @apply h-[156px] w-72 rounded-[6px];
+        @apply h-[156px] w-72 rounded-[6px] lg:h-[245px] lg:w-[447px];
     }
 
     .card-preview-panel-card-back {

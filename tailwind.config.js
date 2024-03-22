@@ -5,6 +5,9 @@ export default {
         fontFamily: {
             sans: ['Space Grotesk', 'Sans-serif'],
         },
+        screens: {
+            lg: '1440px',
+        },
         colors: {
             transparent: 'transparent',
             white: '#FFFFFF',
