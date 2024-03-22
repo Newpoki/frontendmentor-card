@@ -5,3 +5,17 @@
 body {
     height: 100dvh;
 }
+
+@layer components {
+    .card-preview-panel-bg {
+        background-image: url('/src/assets/bg-main-mobile.png');
+        background-repeat: none;
+        background-size: cover;
+    }
+
+    .card-preview-panel-back-bg {
+        background-image: linear-gradient(168.73deg, #ffffff 5%, #d2d3d9 91.69%);
+        background-repeat: none;
+        background-size: cover;
+    }
+}
