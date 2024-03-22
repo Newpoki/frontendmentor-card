@@ -4,17 +4,35 @@
 
 body {
     height: 100dvh;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 @layer components {
-    .card-preview-panel-bg {
+    .card-preview-panel {
+        @apply h-60;
+
         background-image: url('/src/assets/bg-main-mobile.png');
         background-repeat: none;
         background-size: cover;
     }
 
-    .card-preview-panel-back-bg {
+    .card-preview-panel-card {
+        @apply h-[156px] w-72 rounded-[6px];
+    }
+
+    .card-preview-panel-card-back {
+        @apply card-preview-panel-card;
+
         background-image: linear-gradient(168.73deg, #ffffff 5%, #d2d3d9 91.69%);
+        background-repeat: none;
+        background-size: cover;
+    }
+
+    .card-preview-panel-card-front {
+        @apply card-preview-panel-card;
+
+        background-image: url('/src/assets/bg-card-front.png');
         background-repeat: none;
         background-size: cover;
     }

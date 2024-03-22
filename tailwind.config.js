@@ -6,6 +6,7 @@ export default {
             sans: ['Space Grotesk', 'Sans-serif'],
         },
         colors: {
+            transparent: 'transparent',
             white: '#FFFFFF',
             grey: {
                 500: '#DEDDDF',
