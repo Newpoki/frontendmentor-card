@@ -7,6 +7,7 @@ import { Button } from '@/components/button'
 import { CardFormContentExpirationDate } from './card-form-content-expiration-date'
 import { useFormState } from 'react-hook-form'
 import { CardFormContentSuccess } from './card-form-content-success'
+import { MASK_CHAR } from '@/constants'
 
 export const CardFormContent = () => {
     const formState = useFormState<CardFormValues>()
@@ -31,6 +32,7 @@ export const CardFormContent = () => {
                                 name={getFieldKey<CardFormValues>('number')}
                                 placeholder="e.g. 1234 5678 9123 000"
                                 format="#### #### #### ####"
+                                mask={MASK_CHAR}
                             />
                         </div>
 
@@ -43,6 +45,7 @@ export const CardFormContent = () => {
                                     name={getFieldKey<CardFormValues>('cvc')}
                                     placeholder="e.g. 123"
                                     format="###"
+                                    mask={MASK_CHAR}
                                 />
                             </div>
                         </div>

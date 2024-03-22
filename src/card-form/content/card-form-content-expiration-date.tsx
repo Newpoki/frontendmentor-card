@@ -5,6 +5,7 @@ import { Controller, useFormState } from 'react-hook-form'
 import { PatternFormat } from 'react-number-format'
 import { Textfield } from '@/components/textfield'
 import { FieldError } from '@/components/field-error'
+import { MASK_CHAR } from '@/constants'
 
 export const CardFormContentExpirationDate = () => {
     const formState = useFormState<CardFormValues>()
@@ -32,6 +33,7 @@ export const CardFormContentExpirationDate = () => {
                                 format="##"
                                 hasError={hasMonthError}
                                 customInput={Textfield}
+                                mask={MASK_CHAR}
                             />
                         )
                     }}
@@ -47,6 +49,7 @@ export const CardFormContentExpirationDate = () => {
                                 format="##"
                                 customInput={Textfield}
                                 hasError={hasYearError}
+                                mask={MASK_CHAR}
                             />
                         )
                     }}
