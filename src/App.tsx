@@ -1,9 +1,9 @@
 const App = () => {
-  return (
-    <div>
-      <p>app</p>
-    </div>
-  );
-};
+    return (
+        <div>
+            <p>app</p>
+        </div>
+    )
+}
 
-export default App;
+export default App
