@@ -5,7 +5,7 @@ import { z } from 'zod'
  * is handled by format prop on PatternField
  */
 export const cardFormValuesSchemas = z.object({
-    name: z.string().min(1, "Can't be blank"),
+    name: z.string().trim().min(1, "Can't be blank"),
     number: z
         .string()
         .min(1, "Can't be blank")
